@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "Merhaba dünya!",
+    "about": "Hakkımızda sayfasına git",
+    "starterTemplate": {
+      "technologies": "Next.js 15.2 | Supabase | OpenAI | next-intl | TailwindCSS | Shadcn UI",
+      "description": "Başlangıç Şablonu"
+    },
+    "envExample": {
+      "title": ".env örneği",
+      "content": "NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co\nNEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key\nOPENAI_API_KEY=your-openai-key"
+    }
+  },
+  "Footer": {
+    "copyright": "Copyright © {year} Hakları saklı falan değildir."
+  },
+  "LanguageSwitcher": {
+    "english": "İngilizce",
+    "turkish": "Türkçe",
+    "changeLanguage": "Dil değiştir"
+  }
+}

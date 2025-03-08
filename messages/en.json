@@ -1,0 +1,22 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page",
+    "starterTemplate": {
+      "technologies": "Next.js 15.2 | Supabase | OpenAI | next-intl | TailwindCSS | Shadcn UI",
+      "description": "Starter Template"
+    },
+    "envExample": {
+      "title": ".env example",
+      "content": "NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co\nNEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key\nOPENAI_API_KEY=your-openai-key"
+    }
+  },
+  "Footer": {
+    "copyright": "Copyright © {year} No rights reserved."
+  },
+  "LanguageSwitcher": {
+    "english": "English",
+    "turkish": "Turkish",
+    "changeLanguage": "Change language"
+  }
+}
