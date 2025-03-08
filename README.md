@@ -1,91 +1,111 @@
-# NightyNight - Çocuklar İçin Uyku Masalları
+# Next.js 15 Starter Template
 
-<p align="center">
- Ebeveynlerin çocuklarına okuyabileceği özel masallar üreten yapay zeka destekli web uygulaması
-</p>
+This project is a Next.js 15 based starter template for developing modern web applications.
 
-<p align="center">
-  <a href="#özellikler"><strong>Özellikler</strong></a> ·
-  <a href="#teknolojiler"><strong>Teknolojiler</strong></a> ·
-  <a href="#kurulum"><strong>Kurulum</strong></a> ·
-  <a href="#kullanım"><strong>Kullanım</strong></a>
-</p>
+## Features
 
-## Özellikler
+- ✅ **Next.js 15** - Latest Next.js version
+- ✅ **TypeScript** - Type safety
+- ✅ **Tailwind CSS** - Fast and customizable styling
+- ✅ **Multi-language Support** - i18n support with next-intl (Turkish and English)
+- ✅ **Supabase Integration** - Authentication and database operations
+- ✅ **Shadcn UI** - Customizable UI components
+- ✅ **Theme Switching** - Dark/Light mode support
+- ✅ **Protected Pages** - Pages requiring authentication
+- ✅ **Middleware** - Automatic session management
+- ✅ **OpenAI Integration** - Ready configuration for AI features
 
-- 🔐 **Kullanıcı Kimlik Doğrulama**
-  - Güvenli giriş ve kayıt sistemi
-  - Supabase Auth entegrasyonu
-- 🤖 **Yapay Zeka Entegrasyonu**
-  - ChatGPT ile özelleştirilmiş masal üretimi
-  - Yaş grubuna ve tercihlere göre içerik oluşturma
-- 📚 **Masal Yönetimi**
-  - Oluşturulan masalların 24 saat süreyle saklanması
-  - Otomatik içerik temizleme sistemi
-- 💳 **Kredi Sistemi**
-  - Masal oluşturmak için kredi kullanımı
-  - Kredi satın alma seçenekleri
-- 📱 **Responsive Tasarım**
-  - Mobil ve masaüstü uyumlu arayüz
-  - Modern ve kullanıcı dostu deneyim
+## Getting Started
 
-## Teknolojiler
+### Requirements
 
-- **Frontend**
-  - Next.js 15
-  - TypeScript
-  - TailwindCSS
-  - Shadcn/ui
-- **Backend**
-  - Supabase
-  - OpenAI API
-- **Deployment**
-  - Vercel
+- Node.js 18.17 or higher
+- npm, yarn, or pnpm
 
-## Kurulum
+### Installation
 
-1. Repoyu klonlayın:
+1. Clone the project:
+
+   ```bash
+   git clone https://github.com/sellimenes/next15-starter.git
+   cd next15-starter
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. Copy the example environment variables file:
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. Edit the `.env.local` file to add necessary API keys and configurations.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Project Structure
+
+```
+/
+├── app/                      # Next.js application folder
+│   ├── [locale]/             # Language-based routes
+│   │   ├── (auth-pages)/     # Authentication pages
+│   │   ├── protected/        # Protected pages
+│   │   ├── layout.tsx        # Main layout
+│   │   └── page.tsx          # Main page
+│   └── auth/                 # Auth callback processes
+├── components/               # UI components
+│   ├── ui/                   # Basic UI components
+│   └── typography/           # Typography components
+├── i18n/                     # i18n configuration
+├── lib/                      # Helper libraries
+├── messages/                 # Translation files
+│   ├── en.json               # English translations
+│   └── tr.json               # Turkish translations
+└── utils/                    # Helper functions
+```
+
+## Customization
+
+1. **Translations:** Edit the JSON files in the `/messages` folder to customize translations.
+2. **Themes:** Customize themes through Tailwind configuration and shadcn components.
+3. **UI Components:** Edit components in the `/components` folder according to your needs.
+
+## Deployment
+
+You can easily deploy this project to Vercel, Netlify, or other platforms that support Next.js.
 
 ```bash
-git clone https://github.com/sellimenes/nightynight2.git
-cd nightynight
+# Build for production
+npm run build
+# or
+yarn build
+# or
+pnpm build
 ```
 
-2. Bağımlılıkları yükleyin:
+## License
 
-```bash
-npm install
-# veya
-yarn install
-# veya
-pnpm install
-```
+MIT
 
-3. `.env.local` dosyasını oluşturun:
+---
 
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-OPENAI_API_KEY=your_openai_api_key
-```
-
-4. Geliştirme sunucusunu başlatın:
-
-```bash
-npm run dev
-# veya
-yarn dev
-# veya
-pnpm dev
-```
-
-## Kullanım
-
-1. Siteye giriş yapın veya yeni hesap oluşturun
-2. Kredi satın alın
-3. Yeni masal oluşturmak için tercihleri belirleyin
-4. Oluşturulan masalı okuyun ve kaydedin
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
+This template is being developed via [GitHub Repo URL](https://github.com/sellimenes/next15-starter).
